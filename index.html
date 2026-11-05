@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Osteria Verde – Modern Italian Kitchen</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf6ef;--surface:#fff;--ink:#1d1a16;--muted:#6b645a;--accent:#b4532a;--accent-ink:#fff;--line:#e8e0d2;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14110e;--surface:#1e1a16;--ink:#f3ece1;--muted:#a69d8f;--accent:#e07a4a;--accent-ink:#14110e;--line:#2e2820;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14110e;--surface:#1e1a16;--ink:#f3ece1;--muted:#a69d8f;--accent:#e07a4a;--accent-ink:#14110e;--line:#2e2820;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif}
+.btn{background:var(--accent);color:var(--accent-ink)}
+.card{background:var(--surface);border:1px solid var(--line)}
+.field{background:var(--bg);border:1px solid var(--line);color:var(--ink)}
+</style>
+</head>
+<body>
+
+<header class="sticky top-0 z-20 border-b backdrop-blur" style="background:color-mix(in srgb,var(--bg) 88%,transparent);border-color:var(--line)">
+  <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#top" class="serif text-xl font-bold">Osteria Verde</a>
+    <nav class="hidden md:flex gap-8 text-sm" style="color:var(--muted)">
+      <a href="#menu">Menu</a><a href="#story">Our Story</a><a href="#visit">Visit</a>
+    </nav>
+    <a href="#reserve" class="btn rounded-full px-5 py-2 text-sm font-semibold">Book a Table</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="max-w-6xl mx-auto px-5 pt-16 pb-20 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-sm font-semibold tracking-widest uppercase" style="color:var(--accent)">Fresh pasta · Wood-fired · Local wine</p>
+      <h1 class="text-4xl sm:text-6xl font-bold leading-tight mt-4">Handmade Italian, the way it should taste.</h1>
+      <p class="mt-5 text-lg" style="color:var(--muted)">Seasonal ingredients from local farms, pasta rolled every morning. Join us tonight or order for pickup in minutes.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#reserve" class="btn rounded-full px-7 py-3.5 font-semibold">Reserve a Table</a>
+        <a href="tel:+10000000000" class="rounded-full px-7 py-3.5 font-semibold border" style="border-color:var(--line)">Call Now</a>
+      </div>
+      <p class="mt-6 text-sm" style="color:var(--muted)">★★★★★ 4.9 from 600+ Google reviews</p>
+    </div>
+    <div class="aspect-[4/5] rounded-3xl" style="background:radial-gradient(circle at 30% 25%,#e9a46a,transparent 45%),radial-gradient(circle at 75% 70%,#7a8f4e,transparent 50%),linear-gradient(135deg,#b4532a,#3b2a1c)" role="img" aria-label="Replace with a hero photo of your signature dish"></div>
+  </section>
+
+  <section class="border-y" style="border-color:var(--line)">
+    <div class="max-w-6xl mx-auto px-5 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div><p class="serif text-3xl font-bold">12 yrs</p><p class="text-sm" style="color:var(--muted)">Family owned</p></div>
+      <div><p class="serif text-3xl font-bold">100%</p><p class="text-sm" style="color:var(--muted)">Fresh daily pasta</p></div>
+      <div><p class="serif text-3xl font-bold">4.9★</p><p class="text-sm" style="color:var(--muted)">Guest rating</p></div>
+      <div><p class="serif text-3xl font-bold">20 min</p><p class="text-sm" style="color:var(--muted)">Pickup orders</p></div>
+    </div>
+  </section>
+
+  <section id="menu" class="max-w-6xl mx-auto px-5 py-20">
+    <h2 class="text-3xl sm:text-4xl font-bold">Guest favorites</h2>
+    <p class="mt-2" style="color:var(--muted)">A taste of what’s on tonight’s menu.</p>
+    <div class="mt-10 grid sm:grid-cols-3 gap-6">
+      <article class="card rounded-2xl overflow-hidden"><div class="h-40" style="background:linear-gradient(135deg,#e9a46a,#b4532a)"></div><div class="p-5"><div class="flex justify-between"><h3 class="text-xl font-bold">Tagliatelle Ragù</h3><span class="font-semibold">$22</span></div><p class="mt-2 text-sm" style="color:var(--muted)">Slow-braised beef and pork, hand-cut egg pasta, aged parmesan.</p></div></article>
+      <article class="card rounded-2xl overflow-hidden"><div class="h-40" style="background:linear-gradient(135deg,#9fb36a,#4d6a2f)"></div><div class="p-5"><div class="flex justify-between"><h3 class="text-xl font-bold">Margherita Verde</h3><span class="font-semibold">$18</span></div><p class="mt-2 text-sm" style="color:var(--muted)">Wood-fired, San Marzano tomato, buffalo mozzarella, basil.</p></div></article>
+      <article class="card rounded-2xl overflow-hidden"><div class="h-40" style="background:linear-gradient(135deg,#d9b38c,#7a4a2a)"></div><div class="p-5"><div class="flex justify-between"><h3 class="text-xl font-bold">Tiramisù</h3><span class="font-semibold">$11</span></div><p class="mt-2 text-sm" style="color:var(--muted)">Espresso-soaked savoiardi, mascarpone cream, cocoa.</p></div></article>
+    </div>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#" class="btn rounded-full px-6 py-3 font-semibold">Order Online</a>
+      <a href="#" class="rounded-full px-6 py-3 font-semibold border" style="border-color:var(--line)">Download Full Menu (PDF)</a>
+    </div>
+  </section>
+
+  <section id="story" class="py-20" style="background:var(--surface)">
+    <div class="max-w-3xl mx-auto px-5 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold">Cooked with care, served with warmth</h2>
+      <p class="mt-5 text-lg" style="color:var(--muted)">What started as Nonna’s kitchen table is now a neighborhood favorite. We work with nearby farms, make our pasta every morning, and treat every guest like family.</p>
+      <blockquote class="mt-10 serif text-xl italic">“The best pasta in the city. We’re back every week.”</blockquote>
+      <p class="mt-2 text-sm" style="color:var(--muted)">— Sarah M., Google review</p>
+    </div>
+  </section>
+
+  <section id="reserve" class="max-w-6xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-12">
+    <div>
+      <h2 class="text-3xl sm:text-4xl font-bold">Reserve your table</h2>
+      <p class="mt-3" style="color:var(--muted)">Takes 30 seconds. We’ll confirm by text. Groups of 8+? Call us.</p>
+    </div>
+    <form class="card rounded-2xl p-6 grid gap-4" action="#" method="post" onsubmit="event.preventDefault();this.querySelector('button').textContent='Request sent ✓'">
+      <input class="field rounded-xl px-4 py-3" placeholder="Full name" required aria-label="Full name">
+      <input class="field rounded-xl px-4 py-3" type="tel" placeholder="Phone number" required aria-label="Phone">
+      <div class="grid grid-cols-2 gap-4">
+        <input class="field rounded-xl px-4 py-3" type="date" required aria-label="Date">
+        <select class="field rounded-xl px-4 py-3" aria-label="Guests"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5–7 guests</option></select>
+      </div>
+      <button class="btn rounded-xl py-3.5 font-semibold" type="submit">Request Reservation</button>
+    </form>
+  </section>
+</main>
+
+<footer id="visit" class="border-t" style="border-color:var(--line)">
+  <div class="max-w-6xl mx-auto px-5 py-12 grid sm:grid-cols-3 gap-8 text-sm">
+    <div><p class="serif text-xl font-bold">Osteria Verde</p><p class="mt-2" style="color:var(--muted)">123 Main Street<br>Your City, ST 00000</p></div>
+    <div><p class="font-semibold">Hours</p><p class="mt-2" style="color:var(--muted)">Tue–Thu 5–10pm<br>Fri–Sat 5–11pm<br>Sun 4–9pm · Mon closed</p></div>
+    <div><p class="font-semibold">Contact</p><p class="mt-2" style="color:var(--muted)"><a href="tel:+10000000000">(000) 000-0000</a><br>hello@osteriaverde.com<br>Instagram · Facebook</p></div>
+  </div>
+  <p class="text-center text-xs pb-8" style="color:var(--muted)">© 2026 Osteria Verde</p>
+</footer>
+
+<a href="tel:+10000000000" class="md:hidden fixed bottom-4 right-4 btn rounded-full px-5 py-3 font-semibold shadow-lg" style="bottom:calc(1rem + env(safe-area-inset-bottom,0px))">Call</a>
+</body>
+</html>
